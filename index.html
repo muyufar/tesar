@@ -76,7 +76,7 @@
 
 <body>
     
-
+<script type="text/javascript" src="https://libs.zappar.com/zappar-cv/0.3.12/zappar-cv.js"></script>
     <div id="gameContainer"></div>
     <div id="loader">
         <div class="progress">
@@ -99,7 +99,7 @@
                 gameInstance= UnityLoader.instantiate("gameContainer", "Build/New folder.json", { onProgress: UnityProgress }); 
                 return; 
             }
-            setTimeout(WaitForZCVLoad, 500);
+            setTimeout(WaitForZCVLoad, 5000000000);
         }
 
         function UnityProgress(gameInstance, progress) {
